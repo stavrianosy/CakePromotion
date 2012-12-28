@@ -15,7 +15,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Database.SetInitializer(new DropCreateDBWithSeedData());
+            //Database.SetInitializer(new DropCreateDBWithSeedData());
             //Database.SetInitializer<EntityContext>(null);
             using (EntityContext context = new EntityContext())
             {

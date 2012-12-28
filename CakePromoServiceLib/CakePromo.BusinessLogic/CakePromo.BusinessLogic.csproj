@@ -42,8 +42,6 @@
   <ItemGroup>
     <Compile Include="Cake.cs" />
     <Compile Include="CakePhoto.cs" />
-    <Compile Include="ClassB.cs" />
-    <Compile Include="ClassA.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="ICake.cs" />
     <Compile Include="Personal.cs" />
