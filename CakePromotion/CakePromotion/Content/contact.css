@@ -1,0 +1,38 @@
+﻿div #contactContainer #field {
+    padding-bottom:10px;
+}
+div #contactContainer #contactDetails {
+    margin-right:30px;
+    float:left;
+}
+
+div #contactContainer #contactMap {
+    float:left;
+}
+
+div #contactContainer #label {
+    float:left;
+    width:100px;    
+}
+div #contactContainer #text {
+    float:left;
+}
+
+div #contactMap #map_canvas {    
+    width:450px;
+    height:200px;
+}
+div#contactFormButtons {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom:10px;
+}
+div#emailMsg {
+    padding:10px;
+    font-size:11px;
+}
+div#emailErrorMsg {
+    font-size:11px;
+    color:red;
+    padding:10px;
+}

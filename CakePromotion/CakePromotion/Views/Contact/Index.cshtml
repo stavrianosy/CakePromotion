@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script>
+    $(document).ready(function () {
+
+        var lat = 35.13391;
+        var lng = 33.35315;
+
+        $('#map_canvas').gmap({ center: lat + "," + lng }).bind('init', function (evt, map) {
+            $('#map_canvas').gmap('option', 'zoom', 14),
+            $('#map_canvas').gmap('addMarker', { /*id:'m_1',*/title: 'Use the +/- on the left to zoom', position: lat + "," + lng, bounds: false })
+        });
+
+        $('#sendMsg').validate({
+            rules: {
+                name: {
+                    required: true                    
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true
+                }
+            }
+        });//end validate
+    })//end ready
+</script>
+
+<h2>Contact address</h2>
+
+<div id="contactContainer">
+    <div id="contactDetails">
+        <div id="field">
+            <div id="label">Name:</div>
+            <div id="text">Stella Papacosta</div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="field">
+            <div id="label">Address:</div>
+            <div id="text">
+                Alpeon 11,<br />
+                Strovolos 2035,
+            <br />
+                Nicosia<br />
+                Cyprus
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="field">
+            <div id="label">Tel:</div>
+            <div id="text">(+357) 99 770435</div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="field">
+            <div id="label">Fax:</div>
+            <div id="text">n/a</div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="field">
+            <div id="label">email:</div>
+            <div id="text"><a href="mailto:stella-dp@hotmail.com">stella-dp@hotmail.com</a></div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    <div id="contactMap">
+        <div id="map_canvas"></div>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<h2>Send your question/feedback</h2>
+@using (Html.BeginForm("SendMessage", "Contact", FormMethod.Post, new { id = "sendMsg" }))
+{
+    <div id="contactContainer">
+        <div id="contactDetails">
+            <div id="field">
+                <div id="label"><label for="name">Name</label></div>
+                <div id="text">
+                    <input type="text" name="name" id="name" /></div>
+                <div style="clear: both"></div>
+            </div>
+            <div id="field">
+                <div id="label"><label for="email">Email</label></div>
+                <div id="text">
+                    <input type="text" name="email" id="email" /></div>
+                <div style="clear: both"></div>
+            </div>
+            <div id="field">
+                <div id="label"><label for="message">Message</label></div>
+                <div id="text">
+                    <textarea cols="25" rows="5" id="message" name="message"></textarea></div>
+                <div style="clear: both"></div>
+            </div>
+            <div id="field">
+                <div id="label">&nbsp;</div>
+                <div id="text">
+                    <input type="submit" name="Send" title="Send" value="Send" /><input type="reset" value="Cancel" /></div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+}

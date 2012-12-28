@@ -1,0 +1,136 @@
+﻿@model CakePromotion.CakePromoService.Cake
+@{
+    ViewBag.Title = "CakeCart";
+}
+
+<script>
+    $(document).ready(function () {
+        $(".fancybox-thumb").fancybox({
+            prevEffect: 'none',
+            nextEffect: 'none',
+            helpers: {
+                title: {
+                    type: 'inside'
+                },
+                thumbs: {
+                    width: 50,
+                    height: 50
+                }
+            }
+        });//end fancybox
+        //$('#thumbItem img').each(function (i) {
+        //    //var imgFile = $(this).attr('src');
+        //    //var preloadImage = new Image();
+        //    //var imgExt = /(\.\w{3,4}$)/;
+        //    //preloadImage.src = imgFile.replace(imgExt, '_h$1');
+        //    $('#thumbItem a').hover(function (evt) {
+        //        evt.preventDefault();
+        //        var imgPath = $(this).attr('href');
+        //        var oldImage = $('#cakePhoto img');
+        //        var newImage = $('<img src="' + imgPath + '" width="100%">');
+        //        newImage.hide();
+        //        $('#cakePhoto').prepend(newImage);
+        //        oldImage.fadeOut(100, function () {
+        //            //$(this).remove();
+        //        });
+        //        newImage.fadeIn(0);
+        //    }); //end click 
+        //});
+        //$('#thumbItem a:first').hover();
+    });
+</script>
+
+<h2>Cake Cart</h2>
+<div id="cart">
+    <div id="cakePhotoContainer">
+        <div id="cakePhoto">
+        <img src="@Url.Content(Model.CakePhoto.FirstOrDefault().PhotoURL_Large)" width="100%" />
+            </div>
+        @{
+            int thumbWidth = (Model.CakePhoto.Count * 50) + 15;
+            int thumbWidth_max = 280;
+            thumbWidth = thumbWidth > thumbWidth_max ? thumbWidth_max : thumbWidth;
+         }
+        <div id="thumbs" style="width:@(thumbWidth)px" >
+            @foreach (var photo in Model.CakePhoto)
+            {
+                <div id="thumbItem">
+                    <a class="fancybox-thumb" rel="fancybox-thumb" href="@Url.Content(photo.PhotoURL_Large)" title="@Model.Name">
+                    <img src="@Url.Content(photo.PhotoURL_Small)" width="50px" alt="@Model.Name" />
+                        </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div id="cakedetails">
+        <p></p>
+        <div id="cake_Container"><b>Name:</b> @Model.Name</div>
+        <div id="cake_Container">
+            <div id="cakeIngredients">
+                <b>Ingredients:</b><br />
+                @foreach (var ingredient in Model.Ingredient)
+                { 
+                    <div id="ingredientQnt">@ingredient.Quantity/@ingredient.Unit.ShortName&nbsp;</div><div id="ingredientName">@ingredient.Name</div>
+                    <div style="clear:both"></div>
+                }
+            </div>
+        </div>
+        <div id="cake_Container">
+            <b>Price: €</b>
+            </div>
+        <div id="cake_Container">
+            <b>Rating:</b>
+            <div id="cakeListRate">
+                <div id="rateLabel">Design rate:</div>
+                @{double design = Math.Round(Model.Rate.Average(r => r.Design),1);}
+                @for (int i = 1; i < 6; i++)
+                {
+                    double number = Math.Floor(design);
+                    double fraction = design - number;
+                    <div class="star" style="background-position:0 @(number >= i ? "16px" : (number+1 < i) ? "0" : (Math.Floor(fraction / 2 * 10) * -16).ToString() + "px");"></div>
+                }
+                <span>&nbsp;@design</span>
+            </div>
+            <div id="cakeListRate">
+                <div id="rateLabel">Taste rate:</div>
+                @{double taste = Math.Round(Model.Rate.Average(r => r.Taste),1);}
+                @for (int i = 1; i < 6; i++)
+                {
+                    double number = Math.Floor(taste);
+                    double fraction = taste - number;
+                    <div class="star" style="background-position:0 @(number >= i ? "16px" : (number+1 < i) ? "0" : (Math.Floor(fraction / 2 * 10) * -16).ToString() + "px");"></div>
+                }
+                <span>&nbsp;@taste</span>
+            </div>
+            <div id="cakeListRate">
+                <div id="rateLabel">Facilitate rate:</div>
+                @{double facilitate = Math.Round(Model.Rate.Average(r => r.Facilitate),1);}
+                @for (int i = 1; i < 6; i++)
+                {
+                    double number = Math.Floor(facilitate);
+                    double fraction = facilitate - number;
+                    <div class="star" style="background-position:0 @(number >= i ? "16px" : (number+1 < i) ? "0" : (Math.Floor(fraction / 2 * 10) * -16).ToString() + "px");"></div>
+                }
+                <span>&nbsp;@facilitate</span>
+            </div>
+            <p style="margin: 0">-----------------------------------------</p>
+            <div id="cakeListRate">
+                <div id="rateLabel">Overall rate:</div>
+                @{double rateAvg = (Math.Round((Model.Rate.Average(r => r.Facilitate) + Model.Rate.Average(r => r.Design) + Model.Rate.Average(r => r.Taste)) / 3, 1));}
+                @for (int i = 1; i < 6; i++)
+                {
+                    double number = Math.Floor(rateAvg);
+                    double fraction = rateAvg - number;
+                    <div class="star" style="background-position:0 @(number >= i ? "16px" : (number+1 < i) ? "0" : (Math.Floor(fraction / 2 * 10) * -16).ToString() + "px");"></div>
+                }
+                <span>&nbsp;@rateAvg</span>
+            </div>
+        </div>
+        <div id="cake_Container">
+            <b>Comments:</b>
+            <div id="cakeComment">@Model.Rate.FirstOrDefault().Comments</div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>

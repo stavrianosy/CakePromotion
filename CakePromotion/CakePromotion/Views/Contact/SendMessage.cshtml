@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "SendMessage";
+}
+
+@if (ViewBag.EmailSent)
+{
+    <h2>Message Sent</h2>
+    <div id="emailMsg">Thank you for for senting me your comments via email. 
+        <br />Your fedback is highly appriciated and helpful for improving our service.
+    </div> 
+}
+else
+{
+    <h2>Message NOT sent</h2>
+    <div id="emailErrorMsg">Unfortunately your email was not sent. 
+        <p>Please try again later sending again your comments via email. If the problem remains, you can use my phone number from the contact page and give a phone call. Sorry for the inconvinience.</p>
+        
+    </div>
+}
+<p>@Html.ActionLink("Back to Contact page", "Index","Contact")</p>

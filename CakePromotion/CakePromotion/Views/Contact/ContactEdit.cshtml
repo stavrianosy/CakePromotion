@@ -1,0 +1,21 @@
+﻿@*@model CakePromotion.Models.test*@
+@model CakePromo.BusinessLogic.Cake
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+<h2>Contact</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+    <p>
+            <input type="submit" value="Edit" />
+        </p>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index", "Home")
+</div>

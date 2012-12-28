@@ -1,0 +1,150 @@
+﻿body {
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana;
+    background: url("../images/background.png") 0 12px;
+    margin: 0px;
+}
+
+h2 {
+    font-size:14px;
+    padding:3px;
+    background:#edeeb8;
+}
+
+img {
+    vertical-align:bottom;
+}
+
+div#container {
+    background: url("../images/background_top.png") repeat-x;
+}
+
+div#container_bottom {
+    background: url("../images/background_bottom.png") repeat-x bottom;
+}
+
+.menu {
+}
+
+/* header */
+div#main {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background: #fff;
+    -moz-box-shadow: 0px 0px 10px 5px #000;
+    -webkit-box-shadow: 0px 0px 10px 5px #000;
+    box-shadow: 12px 0 15px -9px #000, -12px 0 8px -9px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+div#top {
+    text-align: right;
+    font-style: italic;
+    height: 30px;
+    background: url("../images/cake_top.png") no-repeat 60px bottom;
+    padding: 0 8px;
+}
+
+    div#top div {
+        padding-top: 8px;
+    }
+
+div#logo {
+    background: url("../images/header_background.png");
+    height: 202px;
+    padding-left: 22px;
+}
+
+/* Content
+--------------------------*/
+div#body {
+    padding: 0 8px;
+}
+
+div#cakeListItem {
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #cdcdcd;
+    width: 365px;
+}
+
+    div#cakeListItem.right {
+        margin-right: 0px;
+    }
+
+div#bottom {
+    text-align: right;
+    height: 30px;
+    background: #e5e5e5;
+    padding: 0 8px;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+
+    div#bottom #left {
+        padding-top: 8px;
+        float: left;
+    }
+
+    div#bottom #right {
+        font-style: italic;
+        padding-top: 8px;
+        float: right;
+    }
+
+label.error {
+padding-left:5px;
+color:red;
+}
+
+/* menu
+----------------------------------------------------------*/
+ul#menu {
+    margin: 0 0 5px;
+    padding: 2px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        background: url("../images/menu_separate.png") no-repeat 0px 2px;
+    }
+
+        ul#menu li#first_item {
+            background: #fff;
+        }
+
+        ul#menu li a {
+            background: none;
+            color: #932b6d;
+            text-decoration: none;
+            padding: 1px 15px 1px 20px;
+        }
+
+            ul#menu li a:hover {
+                background: #b83ae1;
+                color: #fff;
+                text-decoration: none;
+            }
+
+/* footer
+-----------------------------------*/
+footer {
+    color: #333;
+}
+
+    footer a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
