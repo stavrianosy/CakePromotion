@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CakePromoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="CakePromoModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cakes" EntityType="CakePromoModel.Cake" />
+    <EntitySet Name="Ingredients" EntityType="CakePromoModel.Ingredients" />
+    <AssociationSet Name="CakeIngredients" Association="CakePromoModel.CakeIngredients">
+      <End Role="Cake" EntitySet="Cakes" />
+      <End Role="Ingredients" EntitySet="Ingredients" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cake">
+    <Key>
+      <PropertyRef Name="CakeId" />
+    </Key>
+    <Property Type="Int32" Name="CakeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Comments" Nullable="false" />
+    <Property Type="String" Name="TimeStamp" Nullable="false" />
+    <Property Type="String" Name="UserId" Nullable="false" />
+    <NavigationProperty Name="Ingredients" Relationship="CakePromoModel.CakeIngredients" FromRole="Cake" ToRole="Ingredients" />
+  </EntityType>
+  <EntityType Name="Ingredients">
+    <Key>
+      <PropertyRef Name="IngredientsId" />
+    </Key>
+    <Property Type="Int32" Name="IngredientsId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="TimeStamp" Nullable="false" />
+    <NavigationProperty Name="Cakes" Relationship="CakePromoModel.CakeIngredients" FromRole="Ingredients" ToRole="Cake" />
+  </EntityType>
+  <Association Name="CakeIngredients">
+    <End Type="CakePromoModel.Cake" Role="Cake" Multiplicity="*" />
+    <End Type="CakePromoModel.Ingredients" Role="Ingredients" Multiplicity="*" />
+  </Association>
+</Schema>
