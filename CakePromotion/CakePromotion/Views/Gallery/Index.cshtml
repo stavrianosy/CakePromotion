@@ -8,7 +8,7 @@
 {
     <a href="@Url.Action("CakeCart", "Gallery", new {CakeID = cake.Data.CakeID})">
         <div id="cakeListItem" class="@(cake.Index % 2==0 ? "left":"right")">
-            <div id="cakeListItem_img"><img src="@Url.Content(cake.Data.CakePhoto.FirstOrDefault().PhotoURL_Large)" alt="@cake.Data.Name" width="120" /></div>
+            <div id="cakeListItem_img"><img src="@Url.Content(cake.Data.CakePhoto.FirstOrDefault().PhotoURL_Small)" alt="@cake.Data.Name" width="120" /></div>
             <div id="cakeListItem_content">
                 <div id="cakeListName">
                     @cake.Data.Name
