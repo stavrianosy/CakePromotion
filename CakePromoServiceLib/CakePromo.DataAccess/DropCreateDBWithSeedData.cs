@@ -30,7 +30,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 1,
-                PhotoURL_Small = "~/images/cakes/DSCN0761.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0761_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0761.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -38,7 +38,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 2,
-                PhotoURL_Small = "~/images/cakes/DSCN0762.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0762_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0762.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -46,7 +46,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 3,
-                PhotoURL_Small = "~/images/cakes/DSCN0845.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0845_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0845.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -54,7 +54,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 4,
-                PhotoURL_Small = "~/images/cakes/DSCN0846.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0846_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0846.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -62,7 +62,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 5,
-                PhotoURL_Small = "~/images/cakes/DSCN0849.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0849_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0849.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -70,7 +70,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 6,
-                PhotoURL_Small = "~/images/cakes/SNC00643.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00643_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00643.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -78,7 +78,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 7,
-                PhotoURL_Small = "~/images/cakes/SNC00645.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00645_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00645.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -86,7 +86,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 8,
-                PhotoURL_Small = "~/images/cakes/SNC00955.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00955_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00955.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -94,7 +94,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 9,
-                PhotoURL_Small = "~/images/cakes/DSCN1326.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN1326_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN1326.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -102,7 +102,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 10,
-                PhotoURL_Small = "~/images/cakes/DSCN1327.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN1327_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN1327.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -110,7 +110,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 11,
-                PhotoURL_Small = "~/images/cakes/DSCN1328.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN1328_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN1328.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -118,7 +118,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 12,
-                PhotoURL_Small = "~/images/cakes/SNC00414.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00414_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00414.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -126,7 +126,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 13,
-                PhotoURL_Small = "~/images/cakes/SNC00415.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00415_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00415.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -134,7 +134,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 14,
-                PhotoURL_Small = "~/images/cakes/SNC00416.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00416_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00416.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -142,7 +142,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 15,
-                PhotoURL_Small = "~/images/cakes/DSCN0847.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0847_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0847.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -150,7 +150,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 16,
-                PhotoURL_Small = "~/images/cakes/DSCN0879.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0879_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0879.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -158,7 +158,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 17,
-                PhotoURL_Small = "~/images/cakes/DSCN0880.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0880_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0880.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -166,7 +166,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 18,
-                PhotoURL_Small = "~/images/cakes/DSCN0881.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0881_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0881.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -174,7 +174,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 19,
-                PhotoURL_Small = "~/images/cakes/DSCN0882.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0882_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0882.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -182,7 +182,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 20,
-                PhotoURL_Small = "~/images/cakes/DSCN0883.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN0883_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN0883.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -190,7 +190,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 21,
-                PhotoURL_Small = "~/images/cakes/DSCN1322.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN1322_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN1322.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -198,7 +198,7 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 22,
-                PhotoURL_Small = "~/images/cakes/DSCN1324.jpg",
+                PhotoURL_Small = "~/images/cakes/DSCN1324_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/DSCN1324.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
@@ -206,133 +206,133 @@ namespace CakePromo.DataAccess
             context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 23,
-                PhotoURL_Small = "~/images/cakes/SNC00301.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00301_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00301.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 24,
-                PhotoURL_Small = "~/images/cakes/SNC00302.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00302_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00302.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 25,
-                PhotoURL_Small = "~/images/cakes/SNC00303.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00303_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00303.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 26,
-                PhotoURL_Small = "~/images/cakes/SNC00304.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00304_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00304.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 27,
-                PhotoURL_Small = "~/images/cakes/SNC00488.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00488_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00488.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 28,
-                PhotoURL_Small = "~/images/cakes/SNC00489.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00489_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00489.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 29,
-                PhotoURL_Small = "~/images/cakes/SNC00490.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00490_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00490.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 30,
-                PhotoURL_Small = "~/images/cakes/SNC00620.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00620_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00620.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 31,
-                PhotoURL_Small = "~/images/cakes/SNC00621.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00621_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00621.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 32,
-                PhotoURL_Small = "~/images/cakes/SNC00622.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00622_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00622.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 33,
-                PhotoURL_Small = "~/images/cakes/SNC00628.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00628_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00628.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 34,
-                PhotoURL_Small = "~/images/cakes/SNC00629.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00629_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00629.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 35,
-                PhotoURL_Small = "~/images/cakes/SNC00630.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00630_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00630.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 36,
-                PhotoURL_Small = "~/images/cakes/SNC00652.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00652_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00652.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 37,
-                PhotoURL_Small = "~/images/cakes/SNC00653.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00653_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00653.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 38,
-                PhotoURL_Small = "~/images/cakes/SNC00681.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00681_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00681.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 39,
-                PhotoURL_Small = "~/images/cakes/SNC00686.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00686_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00686.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 40,
-                PhotoURL_Small = "~/images/cakes/SNC00694.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00694_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00694.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
             }); context.CakePhoto.Add(new CakePhoto
             {
                 CakePhotoID = 41,
-                PhotoURL_Small = "~/images/cakes/SNC00969.jpg",
+                PhotoURL_Small = "~/images/cakes/SNC00969_sml.jpg",
                 PhotoURL_Large = "~/images/cakes/SNC00969.jpg",
                 TimeStamp = DateTime.Now,
                 User = context.User.Local.Single(u => u.UserID == 1)
