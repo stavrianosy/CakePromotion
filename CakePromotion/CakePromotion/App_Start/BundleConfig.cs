@@ -39,7 +39,8 @@ namespace CakePromotion
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/site.css")
                 .Include("~/Content/cart.css")
-                .Include("~/Content/contact.css"));
+                .Include("~/Content/contact.css")
+                .Include("~/Content/cakeList.css"));
 
             bundles.Add(new StyleBundle("~/Content/fancybox")
                 .Include("~/Content/themes/fancybox/source/jquery.fancybox.css")
